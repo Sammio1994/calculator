@@ -1,0 +1,186 @@
+/* Calculator */
+
+.calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #2b2b2b; /* Darker border for a rugged look */
+  border-radius: 10px;
+  background-color: #4b5320; /* Olive drab background, military-style color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for a solid look */
+}
+
+.display {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #2b2b2b; /* Dark background for the display */
+  color: #eaeaea; /* Light text color for contrast */
+  text-align: right;
+  border-radius: 5px;
+  border: 2px solid #696969; /* Additional border to give a rugged feel */
+  font-family: 'Courier New', Courier, monospace; /* Military-style font */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  font-size: 1.5em;
+  padding: 20px;
+  background: #3c403d; /* Dark green/gray button background */
+  color: #fff; /* White text on the buttons */
+  border: 2px solid #2b2b2b; /* Dark borders for the buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Courier New', Courier, monospace; /* Consistent military-style font */
+}
+
+.button:hover {
+  background-color: #5a5c51; /* Slightly lighter hover effect */
+}
+
+.button:active {
+  background-color: #2b2b2b; /* Darker active state */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffa500; /* Orange glow when a button is focused, mimicking a targeting effect */
+}
+
+/* Special styles for the 'C' and '=' buttons */
+.button:nth-child(16) { /* Equal button */
+  background-color: #8b0000; /* Dark red for a 'command' feel */
+}
+
+.button:nth-child(16):hover {
+  background-color: #a40000; /* Slightly lighter hover effect */
+}
+
+.button:nth-child(16):active {
+  background-color: #5a0000; /* Darker active state */
+}
+
+.button:nth-child(17) { /* Clear button */
+  background-color: #556b2f; /* Dark olive green for the clear button */
+}
+
+.button:nth-child(17):hover {
+  background-color: #6b8f2f; /* Lighter green on hover */
+}
+
+.button:nth-child(17):active {
+  background-color: #3c4d2a; /* Darker active state */
+}
+
+
+/* .calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  font-size: 1.5em;
+  padding: 20px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #d4d4d4;
+}
+
+.button:active {
+  background-color: #ccc;
+} */
+
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+}
+
+.counter-button {
+  margin: 0 20px;
+  align-items: center;
+  padding: 10px 20px;  /* Adjusts the space inside the button */
+  /* font-size: 60px;     /* Increases the font size of the button text */
+  /* width: 100px;         Adjusts the width of the button
+  height: 100px;        Adjusts the height of the button
+  border-radius: 10px;  
+}  */
+
